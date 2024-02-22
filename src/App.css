@@ -1,0 +1,17 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+.active {
+  border-bottom: 4px solid #e9ce6c;
+}
+.active span {
+  display: block;
+}
