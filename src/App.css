@@ -10,7 +10,8 @@ img {
   max-width: 100%;
 }
 .active {
-  border-bottom: 4px solid #e9ce6c;
+  background-color: rgb(68 64 60);
+  color: #fff;
 }
 .active span {
   display: block;

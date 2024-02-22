@@ -9,6 +9,7 @@ import Likes from "./pages/user/Likes";
 import Contact from "./pages/user/Contact";
 import Mail from "./pages/user/Mail";
 import Notification from "./pages/user/Notification";
+import Register from "./pages/user/Register";
 
 function App() {
   const location = useLocation();
@@ -39,6 +40,7 @@ function App() {
           <Route path="contact" element={<Contact />}></Route>
           <Route path="mail" element={<Mail />}></Route>
           <Route path="notification" element={<Notification />}></Route>
+          <Route path="register" element={<Register />}></Route>
         </Route>
       </Routes>
     </>

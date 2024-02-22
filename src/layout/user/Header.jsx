@@ -10,6 +10,7 @@ import {
   UserOutlined,
 } from "@ant-design/icons";
 import { Link, NavLink } from "react-router-dom";
+import Navigate from "../../components/user/Navigate";
 
 const Header = () => {
   return (
@@ -19,61 +20,40 @@ const Header = () => {
           Masteriseland
         </Link>
         <div className="flex items-center gap-3 absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
-          <NavLink to="/" className="group flex items-center gap-2 p-3 pb-2">
-            <CrownOutlined />
-            <span className="group-hover:block hidden">Home</span>
-          </NavLink>
-          <NavLink
-            to="/explore"
-            className="group flex items-center gap-2 p-3 pb-2"
-          >
-            <SearchOutlined />
-            <span className="group-hover:block hidden">Explore</span>
-          </NavLink>
-          <NavLink
-            to="/posts"
-            className="group flex items-center gap-2 p-3 pb-2"
-          >
-            <ProfileOutlined />
-            <span className="group-hover:block hidden">Posts</span>
-          </NavLink>
-          <NavLink
-            to="/likes"
-            className="group flex items-center gap-2 p-3 pb-2"
-          >
-            <HeartOutlined />
-            <span className="group-hover:block hidden">Likes</span>
-          </NavLink>
-          <NavLink
-            to="/contact"
-            className="group flex items-center gap-2 p-3 pb-2"
-          >
-            <TabletOutlined />
-            <span className="group-hover:block hidden">Contact</span>
-          </NavLink>
-          <NavLink
-            to="/mail"
-            className="group flex items-center gap-2 p-3 pb-2"
-          >
-            <MailOutlined />
-            <span className="group-hover:block hidden">Mail</span>
-          </NavLink>
+          <Navigate navigate={"/"} icon={<CrownOutlined />} text={"Home"} />
+          <Navigate
+            navigate={"/explore"}
+            icon={<SearchOutlined />}
+            text={"Explore"}
+          />
+          <Navigate
+            navigate={"/posts"}
+            icon={<ProfileOutlined />}
+            text={"Posts"}
+          />
+          <Navigate
+            navigate={"/likes"}
+            icon={<HeartOutlined />}
+            text={"Likes"}
+          />
+          <Navigate
+            navigate={"/contact"}
+            icon={<TabletOutlined />}
+            text={"Contact"}
+          />
+          <Navigate navigate={"/mail"} icon={<MailOutlined />} text={"Mail"} />
         </div>
         <div className="flex items-center gap-3 max-w-[200px]">
-          <NavLink
-            to="/notification"
-            className="group flex items-center gap-2 p-3 pb-2"
-          >
-            <BellOutlined />
-            <span className="group-hover:block hidden">Notification</span>
-          </NavLink>
-          <NavLink
-            to="/register"
-            className="group flex items-center gap-2 p-3 pb-2"
-          >
-            <UserOutlined />
-            <span className="group-hover:block hidden">Register</span>
-          </NavLink>
+          <Navigate
+            navigate={"/notification"}
+            icon={<BellOutlined />}
+            text={"Notification"}
+          />
+          <Navigate
+            navigate={"/register"}
+            icon={<UserOutlined />}
+            text={"Register"}
+          />
         </div>
       </div>
     </>
