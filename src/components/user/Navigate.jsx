@@ -6,10 +6,10 @@ const Navigate = ({ navigate, icon, text }) => {
     <>
       <NavLink
         to={navigate}
-        className="group  hover:bg-stone-700 hover:text-white flex items-center gap-2 px-3 py-2 rounded-lg "
+        className="  hover:bg-stone-700 hover:text-white flex items-center gap-2 px-3 py-2 rounded-lg "
       >
         {icon}
-        <span className="group-hover:block hidden">{text}</span>
+        <span className="">{text}</span>
       </NavLink>
     </>
   );

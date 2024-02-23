@@ -1,7 +1,7 @@
 import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCBSu1pn1-Ix2Dgf-12JoUyBJlnuqACzeY",
+  apiKey: import.meta.env.VITE_REACT_APP_API_KEY,
   authDomain: "masteriseland-24c21.firebaseapp.com",
   databaseURL: "https://masteriseland-24c21-default-rtdb.firebaseio.com",
   projectId: "masteriseland-24c21",

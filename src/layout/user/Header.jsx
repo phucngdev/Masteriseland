@@ -15,8 +15,8 @@ import Navigate from "../../components/user/Navigate";
 const Header = () => {
   return (
     <>
-      <div className="max-w-[90%] mx-auto h-[60px] flex items-center justify-between relative">
-        <Link to="/" className="font-bold text-3xl">
+      <div className="w-full z-[999] px-[5%] fixed top-0  bg-white bg-opacity-70 mx-auto h-[60px] flex items-center justify-between ">
+        <Link to="/" className=" font-bold text-3xl ">
           Masteriseland
         </Link>
         <div className="flex items-center gap-3 absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
